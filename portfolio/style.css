@@ -1,4 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Top Navbar */
+.side-navbar {
+    width: 100%;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.side-navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+}
+
+.side-navbar ul li {
+    margin: 0 20px;
+}
+
+.side-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.side-navbar ul li a:hover {
+    color: #00adb5;
+}
+
+/* Sections */
+section {
+    padding: 100px 60px;
+    min-height: 100vh;
+}
+
+/* Home Section */
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    font-size: 24px;
+    color: #00adb5;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Skills */
+#skills ul {
+    margin-top: 20px;
+}
+
+#skills ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Projects & About */
+#projects p,
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .side-navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-navbar ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 120px 20px;
+    }
 }

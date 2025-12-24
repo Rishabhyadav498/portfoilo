@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(110deg, #ea6684, #491b78);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form container */
+.form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Form fields wrapper */
+.divs {
+    margin-bottom: 18px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Inputs & textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Error messages */
+.error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #e53e3e;
+}
+
+/* Success message */
+.success {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #38a169;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+        <h1>ToDo App</h1>
+
+        <div class="input-group">
+            <!-- <label for="todo-input" class="visually-hidden">Add a new task</label> -->
+            <input 
+                id="todo-input"
+                type="text"
+                placeholder="Type a task and press Enter"
+                autocomplete="off"
+            >
+            <button id="add-btn" aria-label="Add task">Add</button>
+        </div>
+
+        <ul id="todo-list" aria-live="polite"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>  
+</html>

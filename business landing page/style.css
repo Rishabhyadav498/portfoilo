@@ -1,0 +1,203 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fafb;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0f172a;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navlist {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 40px;
+}
+
+#navlist a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#navlist a:hover {
+    color: #38bdf8;
+}
+
+/* HERO SECTION */
+#home {
+    min-height: 90vh;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#home h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+#home button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+#cta {
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+#cta:hover {
+    background-color: #0ea5e9;
+}
+
+#home button:not(#cta) {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+#home button:not(#cta):hover {
+    background-color: white;
+    color: #0f172a;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* SERVICES */
+#services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#services p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#services ul {
+    list-style: none;
+    margin: 30px 0;
+}
+
+#services ul li {
+    background: #ffffff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ABOUT */
+#about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    color: #555;
+}
+
+/* TESTIMONIALS */
+section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+section p {
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    font-style: italic;
+    color: #444;
+}
+
+/* CTA SECTION */
+section button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 30px;
+    font-size: 1rem;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+section button:hover {
+    background-color: #1e293b;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.2rem;
+    }
+
+    #home h2 {
+        font-size: 1rem;
+    }
+
+    #navlist {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
