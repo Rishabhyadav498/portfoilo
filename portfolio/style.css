@@ -161,21 +161,31 @@ footer {
     section {
         padding: 110px 20px;
     }
-
+    
     /* Home text size */
     #home h1 {
         padding-top:100px;
         font-size: 32px;
     }
+    #about h2{
+        padding-top:100px;
+        
+    }
+    #projects h2{
+        padding-top:100px;
 
+    }
+   #skills h2{
+       padding-top:100px;
+   } 
     #home h2 {
         font-size: 20px;
     }
-
+    
     #home p {
         font-size: 16px;
     }
-
+    
     /* About text clamp */
     #about p {
         display: -webkit-box;
